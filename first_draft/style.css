@@ -1,0 +1,93 @@
+#para1 {
+    text-align: center;
+    color: aquamarine;
+    padding: 10px 10px 10px 10px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background: tomato;
+    color: dodgerblue;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.header p {
+    font-size: 20px;
+}
+
+.navbar {
+    overflow: hidden; /* Hide overflow */
+    background-color: MediumSeaGreen; /* Dark background color */
+}
+
+.navbar a {
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: tomato; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+    background-color: tomato; /* Grey background color */
+    color: mediumseagreen; /* Black text color */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    color: tomato;
+    /*border: 1px solid tomato;*/
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 30%;
+    background-color: MediumSeaGreen;
+    padding: 20px;
+}
+
+.main{
+    flex: 70%;
+    background-color: MediumSeaGreen;
+    padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }                
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.footer {
+    padding: 1px;
+    text-align: center;
+    background: mediumseagreen;
+}
