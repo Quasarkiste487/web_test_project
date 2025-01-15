@@ -6,12 +6,16 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("paper.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header {
     padding: 80px;
     text-align: center;
     background: tomato;
+    background: rgb(255,99,71,0.01);
     color: dodgerblue;
 }
 
@@ -26,6 +30,7 @@ body {
 .navbar {
     overflow: hidden; /* Hide overflow */
     background-color: MediumSeaGreen; /* Dark background color */
+    opacity: 0.7;
 }
 
 .navbar a {
@@ -54,6 +59,7 @@ body {
 .row {
     color: tomato;
     /*border: 1px solid tomato;*/
+    opacity: 0.7;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -88,6 +94,9 @@ body {
 
 .footer {
     padding: 1px;
+    position: absolute;
+    bottom: 20px;
     text-align: center;
     background: mediumseagreen;
+    opacity: 0.6;
 }
